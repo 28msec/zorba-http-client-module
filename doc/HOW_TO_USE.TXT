@@ -1,0 +1,6 @@
+STEPS:
+
+1. Generate and build data-converters project first with libTidy library installed.
+2. Generate http-client project verify if the data-converters package was found.
+3. If data-converters wasnt found give add the next variable -D DATA_CONVERTERS_BUILD_DIR="path_to_data-converters/build"
+4. Generate project again and build.   
