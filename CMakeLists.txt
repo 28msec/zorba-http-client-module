@@ -29,7 +29,4 @@ FIND_PACKAGE(zorba_data-converters_module REQUIRED
 ADD_TEST_DIRECTORY("${PROJECT_SOURCE_DIR}/test")
 ADD_SUBDIRECTORY("src")
 
-EXPECTED_FAILURE(zorba_http-client_module/http3-post.xq 3304417)
-EXPECTED_FAILURE(zorba_http-client_module/http3-multipart.xq 3304417)
-
 SETUP_EXTERNAL_MODULE()
