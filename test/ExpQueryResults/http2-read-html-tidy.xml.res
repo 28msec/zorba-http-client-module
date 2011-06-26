@@ -3,7 +3,13 @@
 
 <style type="text/css">
 /**/
- /**/ &amp;lt;!-- .portalLink { font-weight: bold; margin-top: 8px; } .portalInfo { margin-bottom: 8px; } .portalViski { margin-top: 0px; margin-bottom: 15px; } --&amp;gt; /**/ 
+/**/
+&amp;lt;!--
+.portalLink { font-weight: bold; margin-top: 8px; }
+.portalInfo { margin-bottom: 8px; }
+.portalViski { margin-top: 0px; margin-bottom: 15px; }
+--&amp;gt;
+/**/
 /**/
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,20 +17,315 @@
 <meta name="keywords" content="vis,forum,bbs,discussion,bulletin board"/>
 <meta name="description" content="Dies ist das Diskussionsforum des VIS - des Vereins der Informatik Studierenden an der ETH Zuerich."/>
 <!-- CSS Stylesheet -->
+
 <style type="text/css" id="vbulletin_css">
 /**/
- /**/ /** * vBulletin 3.8.5 CSS * Style: 'VIS-Look'; Style ID: 2 */ body { background: #FFFFFF; color: #000000; font: 10pt Arial, Helvetica, sans-serif; margin: 0px 0px 0px 0px; padding: 0px; } a:link, body_alink { color: #22229C; } a:visited, body_avisited { color: #22229C; } a:hover, a:active, body_ahover { color: #FF4400; } .page { background: #FFFFFF; color: #000000; } td, th, p, li { font: 10pt Arial, Helvetica, sans-serif; } .tborder { background: #AAAAAA; color: #000000; } .tcat { background: #5A85B0 url(images/vislook/cellpic.png) repeat-x top left; color: #FFFFFF; font: bold 10pt Arial, Helvetica, sans-serif; } .tcat a:link, .tcat_alink { color: #ffffff; text-decoration: none; } .tcat a:visited, .tcat_avisited { color: #ffffff; text-decoration: none; } .tcat a:hover, .tcat a:active, .tcat_ahover { color: #FFFF66; text-decoration: underline; } .thead { background: #5A85B0 url(images/vislook/cellpic.png) repeat-x top left; color: #FFFFFF; font: bold 11px Arial, Helvetica, sans-serif; } .thead a:link, .thead_alink { color: #FFFFFF; } .thead a:visited, .thead_avisited { color: #FFFFFF; } .thead a:hover, .thead a:active, .thead_ahover { color: #FFFF00; } .tfoot { background: #3E678E; color: #FFFFFF; } .tfoot a:link, .tfoot_alink { color: #FFFFFF; } .tfoot a:visited, .tfoot_avisited { color: #FFFFFF; } .tfoot a:hover, .tfoot a:active, .tfoot_ahover { color: #FFFF66; } .alt1, .alt1Active { background: #F7F7F7; color: #000000; } .alt2, .alt2Active { background: #E7E7E7; color: #000000; } .inlinemod { background: #FFFFCC; color: #000000; } .wysiwyg { font: 10pt Arial, Helvetica, sans-serif; } textarea, .bginput { font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; } .bginput option, .bginput optgroup { font-size: 10pt; font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; } .button { font: 11px Arial, Helvetica, sans-serif; } select { font: 11px Arial, Helvetica, sans-serif; } option, optgroup { font-size: 11px; font-family: Arial, Helvetica, sans-serif; } .smallfont { font: 11px Arial, Helvetica, sans-serif; } .time { color: #555555; } .navbar { font: 11px Arial, Helvetica, sans-serif; } .highlight { color: #FF0000; font-weight: bold; } .fjsel { background: #3E5C92; color: #E0E0F6; } .fjdpth0 { background: #F7F7F7; color: #000000; } .panel { background: #EEEEEE; color: #000000; padding: 10px; border: 1px solid #9C9C9C; } .panelsurround { background: #C6D1DB; color: #000000; } legend { color: #22229C; font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; } .vbmenu_control { background: #5A85B0 url(images/vislook/cellpic.png) repeat-x top left; color: #FFFFFF; font: bold 11px Arial, Helvetica, sans-serif; padding: 3px 6px 3px 6px; white-space: nowrap; } .vbmenu_control a:link, .vbmenu_control_alink { color: #FFFFFF; text-decoration: none; } .vbmenu_control a:visited, .vbmenu_control_avisited { color: #FFFFFF; text-decoration: none; } .vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover { color: #FFFFFF; text-decoration: underline; } .vbmenu_popup { background: #FFFFFF; color: #000000; border: 1px solid #0B198C; } .vbmenu_option { background: #BBC7CE; color: #000000; font: 11px Arial, Helvetica, sans-serif; white-space: nowrap; cursor: pointer; } .vbmenu_option a:link, .vbmenu_option_alink { color: #22229C; text-decoration: none; } .vbmenu_option a:visited, .vbmenu_option_avisited { color: #22229C; text-decoration: none; } .vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover { color: #FFFFFF; text-decoration: none; } .vbmenu_hilite { background: #8A949E; color: #FFFFFF; font: 11px Arial, Helvetica, sans-serif; white-space: nowrap; cursor: pointer; } .vbmenu_hilite a:link, .vbmenu_hilite_alink { color: #FFFFFF; text-decoration: none; } .vbmenu_hilite a:visited, .vbmenu_hilite_avisited { color: #FFFFFF; text-decoration: none; } .vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover { color: #FFFFFF; text-decoration: none; } /* ***** styling for 'big' usernames on postbit etc. ***** */ .bigusername { font-size: 14pt; } /* ***** small padding on 'thead' elements ***** */ td.thead, th.thead, div.thead { padding: 4px; } /* ***** basic styles for multi-page nav elements */ .pagenav a { text-decoration: none; } .pagenav td { padding: 2px 4px 2px 4px; } /* ***** de-emphasized text */ .shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; } a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; } .tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; } /* ***** define margin and font-size for elements inside panels ***** */ .fieldset { margin-bottom: 6px; } .fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; } /* ***** don't change the following ***** */ form { margin: 0px; } label { cursor: default; } .normal { font-weight: normal; } .inlineimg { vertical-align: middle; } .underline { text-decoration: underline; } div.spoiler-hidden { background-color:#FFFFFF; color:#FFFFFF; border:1px solid #555555; padding:2px; } div.spoiler-visible { background-color:#FFFFFF; color:#000000; border:1px solid #555555; padding:2px; } div.spoiler-hidden img { visibility: hidden; } div.spoiler-visible img { visibility: visible; } .inlineimg { vertical-align: bottom; } /**/ 
+/**/
+/**
+* vBulletin 3.8.5 CSS
+* Style: 'VIS-Look'; Style ID: 2
+*/
+body
+{
+        background: #FFFFFF;
+        color: #000000;
+        font: 10pt Arial, Helvetica, sans-serif;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+}
+a:link, body_alink
+{
+        color: #22229C;
+}
+a:visited, body_avisited
+{
+        color: #22229C;
+}
+a:hover, a:active, body_ahover
+{
+        color: #FF4400;
+}
+.page
+{
+        background: #FFFFFF;
+        color: #000000;
+}
+td, th, p, li
+{
+        font: 10pt Arial, Helvetica, sans-serif;
+}
+.tborder
+{
+        background: #AAAAAA;
+        color: #000000;
+}
+.tcat
+{
+        background: #5A85B0 url(images/vislook/cellpic.png) repeat-x top left;
+        color: #FFFFFF;
+        font: bold 10pt Arial, Helvetica, sans-serif;
+}
+.tcat a:link, .tcat_alink
+{
+        color: #ffffff;
+        text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+        color: #ffffff;
+        text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+        color: #FFFF66;
+        text-decoration: underline;
+}
+.thead
+{
+        background: #5A85B0 url(images/vislook/cellpic.png) repeat-x top left;
+        color: #FFFFFF;
+        font: bold 11px Arial, Helvetica, sans-serif;
+}
+.thead a:link, .thead_alink
+{
+        color: #FFFFFF;
+}
+.thead a:visited, .thead_avisited
+{
+        color: #FFFFFF;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+        color: #FFFF00;
+}
+.tfoot
+{
+        background: #3E678E;
+        color: #FFFFFF;
+}
+.tfoot a:link, .tfoot_alink
+{
+        color: #FFFFFF;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+        color: #FFFFFF;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+        color: #FFFF66;
+}
+.alt1, .alt1Active
+{
+        background: #F7F7F7;
+        color: #000000;
+}
+.alt2, .alt2Active
+{
+        background: #E7E7E7;
+        color: #000000;
+}
+.inlinemod
+{
+        background: #FFFFCC;
+        color: #000000;
+}
+.wysiwyg
+{
+        font: 10pt Arial, Helvetica, sans-serif;
+}
+textarea, .bginput
+{
+        font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.bginput option, .bginput optgroup
+{
+        font-size: 10pt;
+        font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+        font: 11px Arial, Helvetica, sans-serif;
+}
+select
+{
+        font: 11px Arial, Helvetica, sans-serif;
+}
+option, optgroup
+{
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+.smallfont
+{
+        font: 11px Arial, Helvetica, sans-serif;
+}
+.time
+{
+        color: #555555;
+}
+.navbar
+{
+        font: 11px Arial, Helvetica, sans-serif;
+}
+.highlight
+{
+        color: #FF0000;
+        font-weight: bold;
+}
+.fjsel
+{
+        background: #3E5C92;
+        color: #E0E0F6;
+}
+.fjdpth0
+{
+        background: #F7F7F7;
+        color: #000000;
+}
+.panel
+{
+        background: #EEEEEE;
+        color: #000000;
+        padding: 10px;
+        border: 1px solid #9C9C9C;
+}
+.panelsurround
+{
+        background: #C6D1DB;
+        color: #000000;
+}
+legend
+{
+        color: #22229C;
+        font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+        background: #5A85B0 url(images/vislook/cellpic.png) repeat-x top left;
+        color: #FFFFFF;
+        font: bold 11px Arial, Helvetica, sans-serif;
+        padding: 3px 6px 3px 6px;
+        white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+        color: #FFFFFF;
+        text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+        color: #FFFFFF;
+        text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+        color: #FFFFFF;
+        text-decoration: underline;
+}
+.vbmenu_popup
+{
+        background: #FFFFFF;
+        color: #000000;
+        border: 1px solid #0B198C;
+}
+.vbmenu_option
+{
+        background: #BBC7CE;
+        color: #000000;
+        font: 11px Arial, Helvetica, sans-serif;
+        white-space: nowrap;
+        cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+        color: #22229C;
+        text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+        color: #22229C;
+        text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+        color: #FFFFFF;
+        text-decoration: none;
+}
+.vbmenu_hilite
+{
+        background: #8A949E;
+        color: #FFFFFF;
+        font: 11px Arial, Helvetica, sans-serif;
+        white-space: nowrap;
+        cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+        color: #FFFFFF;
+        text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+        color: #FFFFFF;
+        text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+        color: #FFFFFF;
+        text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, th.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** de-emphasized text */
+.shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; }
+a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; }
+.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+/* ***** don't change the following ***** */
+form { margin: 0px; }
+label { cursor: default; }
+.normal { font-weight: normal; }
+.inlineimg { vertical-align: middle; }
+.underline { text-decoration: underline; }
+
+div.spoiler-hidden { background-color:#FFFFFF; color:#FFFFFF; border:1px solid #555555; padding:2px; }
+div.spoiler-visible { background-color:#FFFFFF; color:#000000; border:1px solid #555555; padding:2px; }
+div.spoiler-hidden img { visibility: hidden; }
+div.spoiler-visible img { visibility: visible; }
+.inlineimg { vertical-align: bottom; }
+/**/
 /**/
 </style>
 <link rel="stylesheet" type="text/css" href="clientscript/vbulletin_important.css?v=385"/>
 <!-- / CSS Stylesheet -->
+
 <script type="text/javascript" src="clientscript/yui/yahoo-dom-event/yahoo-dom-event.js?v=385">
 </script>
 <script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=385">
 </script>
 <script type="text/javascript">
 //
- // &amp;lt;!-- var SESSIONURL = "s=51176e0685fc06c8ae3be0491b4e2b2a&amp;amp;"; var SECURITYTOKEN = "guest"; var IMGDIR_MISC = "images/misc"; var vb_disable_ajax = parseInt("0", 10); // --&amp;gt; // 
+//
+&amp;lt;!--
+var SESSIONURL = "s=51176e0685fc06c8ae3be0491b4e2b2a&amp;amp;";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// --&amp;gt;
+//
 //
 </script>
 <script type="text/javascript" src="clientscript/vbulletin_global.js?v=385">
@@ -32,26 +333,67 @@
 <link rel="alternate" type="application/rss+xml" title="Inforum RSS Feed" href="external.php?type=RSS2"/>
 <script type="text/javascript">
 //
- // &amp;lt;!-- function ie_load_pngs() { var tmp = navigator.appVersion.match(/MSIE (\d+\.\d+)/); if (tmp != null &amp;amp;&amp;amp; parseFloat(tmp[1]) &amp;gt;= 5.5) { for (var i = 0, n = document.images.length; i &amp;lt; n; i++) { var img = document.images[i]; if (img.complete &amp;amp;&amp;amp; img.src.match(/data\/public\/(avatars|pictures|signatures)\//i) != null) { img.style.width = img.width + "px"; img.style.height = img.height + "px"; img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + img.src + "', sizingMethod='scale')"; img.src = "clear.gif"; } } } } if (navigator.platform == "Win32" &amp;amp;&amp;amp; navigator.appName == "Microsoft Internet Explorer" &amp;amp;&amp;amp; window.attachEvent &amp;amp;&amp;amp; navigator.userAgent.indexOf("Opera") == -1) { window.attachEvent("onload", ie_load_pngs); } //--&amp;gt; // 
+//
+&amp;lt;!--
+function ie_load_pngs() {
+        var tmp = navigator.appVersion.match(/MSIE (\d+\.\d+)/);
+        if (tmp != null &amp;amp;&amp;amp; parseFloat(tmp[1]) &amp;gt;= 5.5) {
+                for (var i = 0, n = document.images.length; i &amp;lt; n; i++) {
+                        var img = document.images[i];
+                        if (img.complete &amp;amp;&amp;amp; img.src.match(/data\/public\/(avatars|pictures|signatures)\//i) != null) {
+                                img.style.width = img.width + "px";
+                                img.style.height = img.height + "px";
+                                img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + img.src + "', sizingMethod='scale')";
+                                img.src = "clear.gif";
+                        }
+                }
+        }
+}
+if (navigator.platform == "Win32" &amp;amp;&amp;amp; navigator.appName == "Microsoft Internet Explorer" &amp;amp;&amp;amp; window.attachEvent &amp;amp;&amp;amp; navigator.userAgent.indexOf("Opera") == -1) {
+        window.attachEvent("onload", ie_load_pngs);
+}
+//--&amp;gt;
+//
 //
 </script>
 <title>Inforum - Portal</title>
 
 <script type="text/javascript">
 //
- // &amp;lt;!-- function changeMensa() { document.getElementById(prevMensa + "_title").style.display = "none"; document.getElementById(prevMensa + "_menu").style.display = "none"; prevMensa = document.forms.mensaForm.mensa.value; document.getElementById(prevMensa + "_title").style.display = "inline"; document.getElementById(prevMensa + "_menu").style.display = "block"; } function who_viski(article) { return openWindow( 'http://wiki.vis.ethz.ch/' + article + '&amp;amp;action=history', 800, 600 ); } //--&amp;gt; // 
+//
+&amp;lt;!--
+function changeMensa() {
+        document.getElementById(prevMensa + "_title").style.display = "none";
+        document.getElementById(prevMensa + "_menu").style.display = "none";
+        prevMensa = document.forms.mensaForm.mensa.value;
+        document.getElementById(prevMensa + "_title").style.display = "inline";
+        document.getElementById(prevMensa + "_menu").style.display = "block";
+}
+
+function who_viski(article) {
+        return openWindow(
+                'http://wiki.vis.ethz.ch/' + article + '&amp;amp;action=history',
+                800, 600
+        );
+}
+
+//--&amp;gt;
+//
 //
 </script>
 </head>
 <body>
-<!-- logo --><a name="top" id="top"/>
+<!-- logo -->
+<a name="top" id="top"/>
 <table border="0" width="95%" cellpadding="0" cellspacing="0" align="center">
 <tr>
 <td align="left"><a href="portal.php?s=51176e0685fc06c8ae3be0491b4e2b2a"><img src="images/vislook/vishead.jpg" border="0" alt="Inforum"/></a></td>
 <td align="right" id="header_right_cell"> </td>
 </tr>
 </table>
-<!-- /logo --><!-- content table --><!-- open content container -->
+<!-- /logo -->
+<!-- content table -->
+<!-- open content container -->
 <div align="center">
 <div class="page" style="width:95%; text-align:left">
 <div style="padding:0px 0px 0px 0px" align="left"><br/>
@@ -83,7 +425,8 @@ bleiben?</acronym></label></td>
 <!-- / login form --></td>
 </tr>
 </table>
-<!-- / breadcrumb, login, pm info --><!-- nav buttons bar -->
+<!-- / breadcrumb, login, pm info -->
+<!-- nav buttons bar -->
 <div class="tborder" style="padding:1px; border-top-width:0px">
 <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
 <tr align="center">
@@ -99,7 +442,8 @@ bleiben?</acronym></label></td>
 </tr>
 </table>
 </div>
-<!-- / nav buttons bar --><br/>
+<!-- / nav buttons bar -->
+<br/>
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr valign="top">
 <td width="18%"><!--=== ForenListBox ===-->
@@ -122,7 +466,9 @@ VIS</a></div>
 </tr>
 </tbody>
 </table>
-<!--=== EndForenListBox ===--><img src="clear.gif" width="2" height="12" alt=""/> <!--=== ImportantLinksBox ===-->
+<!--=== EndForenListBox ===-->
+<img src="clear.gif" width="2" height="12" alt=""/> 
+<!--=== ImportantLinksBox ===-->
 <table id="portalLinks" class="tborder" cellspacing="1" cellpadding="4" width="100%">
 <tbody>
 <tr>
@@ -139,11 +485,15 @@ Channel</a></div>
 <div class="smallfont portalInfo">Forum IRC Channel</div>
 <div class="portalLink"><a href="https://www.visit.ethz.ch/index.php?v=Job">Jobbörse</a></div>
 <div class="smallfont portalInfo">Dienstleistung vom VIS</div>
-<!-- <div class="portalLink"><a href="http://ethz.studentenbuecher.ch/">B&uuml;cherb&ouml;rse</a></div> <div class="smallfont portalInfo">Dienstleistung ohne VSETH</div> --></td>
+<!-- <div class="portalLink"><a 
+href="http://ethz.studentenbuecher.ch/">B&uuml;cherb&ouml;rse</a></div>
+<div class="smallfont portalInfo">Dienstleistung ohne VSETH</div> --></td>
 </tr>
 </tbody>
 </table>
-<!--=== EndImportantLinksBox ===--><img src="clear.gif" width="2" height="12" alt=""/> <!--=== WhoIsOnlineBox ===-->
+<!--=== EndImportantLinksBox ===-->
+<img src="clear.gif" width="2" height="12" alt=""/> 
+<!--=== WhoIsOnlineBox ===-->
 <table id="portalUsers" class="tborder" cellspacing="1" cellpadding="4" width="100%">
 <tbody>
 <tr>
@@ -573,7 +923,9 @@ Jassturnier</a></div>
 </tr>
 </tbody>
 </table>
-<!--=== EndEventBox ===--><img src="clear.gif" width="2" height="12" alt=""/> <!--=== MensaBox ===-->
+<!--=== EndEventBox ===-->
+<img src="clear.gif" width="2" height="12" alt=""/> 
+<!--=== MensaBox ===-->
 <table id="portalMenus" class="tborder" cellspacing="1" cellpadding="4" width="100%">
 <tbody>
 <tr>
@@ -677,7 +1029,9 @@ Gemüse, Pilzen, Tofu und Curryei, Salat oder Apfelmus</div>
 </tr>
 </tbody>
 </table>
-<!--=== MensaBoxEnd ===--><img src="clear.gif" width="2" height="12" alt=""/> <!--=== ViskiBox ===-->
+<!--=== MensaBoxEnd ===-->
+<img src="clear.gif" width="2" height="12" alt=""/> 
+<!--=== ViskiBox ===-->
 <table id="portalViski" class="tborder" cellspacing="1" cellpadding="4" width="100%">
 <tbody>
 <tr>
@@ -709,9 +1063,13 @@ Startseite</a></div>
 </tr>
 </tbody>
 </table>
-<!--=== ViskiBoxEnd ===--><script type="text/javascript">
+<!--=== ViskiBoxEnd ===-->
+<script type="text/javascript">
 //
- // prevMensa = document.forms.mensaForm.mensa.value; changeMensa(); // 
+//
+prevMensa = document.forms.mensaForm.mensa.value;
+changeMensa();
+//
 //
 </script></td>
 </tr>
@@ -722,7 +1080,8 @@ Es ist jetzt <span class="time">11:48</span> Uhr.</div>
 <br/></div>
 </div>
 </div>
-<!-- / close content container --><!-- /content area table -->
+<!-- / close content container -->
+<!-- /content area table -->
 <form action="index.php" method="get" style="clear:left">
 <table cellpadding="6" cellspacing="0" border="0" width="95%" class="page" align="center">
 <tr>
@@ -746,17 +1105,23 @@ oben</a></strong></div>
 <br/>
 <div align="center">
 <div class="smallfont" align="center">
-<!-- Do not remove this copyright notice -->Powered by vBulletin®
-Version 3.8.5 (Deutsch)<br/>
+<!-- Do not remove this copyright notice -->
+Powered by vBulletin® Version 3.8.5 (Deutsch)<br/>
 Copyright ©2000 - 2010, Jelsoft Enterprises Ltd. 
 <!-- Do not remove this copyright notice --></div>
 <div class="smallfont" align="center">
-<!-- Do not remove cronimage or your scheduled tasks will cease to function --><!-- Do not remove cronimage or your scheduled tasks will cease to function --></div>
+<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+<!-- Do not remove cronimage or your scheduled tasks will cease to function --></div>
 </div>
 </form>
 <script type="text/javascript">
 //
- // &amp;lt;!-- // Main vBulletin Javascript Initialization vBulletin_init(); //--&amp;gt; // 
+//
+&amp;lt;!--
+        // Main vBulletin Javascript Initialization
+        vBulletin_init();
+//--&amp;gt;
+//
 //
 </script>
 <p align="center" class="smallfont">89.750 msec</p>
