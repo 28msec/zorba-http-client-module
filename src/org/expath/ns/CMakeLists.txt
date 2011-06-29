@@ -12,4 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Nothing to do in this directory.
+DECLARE_ZORBA_MODULE("http://expath.org/ns/http-client.xq" 1.0 "http-client.xq")
+DECLARE_ZORBA_MODULE("http://expath.org/ns/error.xq" 1.0 "error.xq")

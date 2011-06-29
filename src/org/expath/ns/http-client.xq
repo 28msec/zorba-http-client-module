@@ -106,6 +106,9 @@ import schema namespace tidy-options="http://www.zorba-xquery.com/modules/conver
 
 import schema namespace https = "http://expath.org/ns/http-client";
 
+declare namespace ver = "http://www.zorba-xquery.com/options/versioning";
+declare option ver:module-version "1.0";
+
 (:~
  : This function sends an HTTP request and returns the corresponding response. 
  :
