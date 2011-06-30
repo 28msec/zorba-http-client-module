@@ -13,4 +13,3 @@
 # limitations under the License.
 
 DECLARE_ZORBA_MODULE("http://expath.org/ns/http-client.xq" 1.0 "http-client.xq")
-DECLARE_ZORBA_MODULE("http://expath.org/ns/error.xq" 1.0 "error.xq")

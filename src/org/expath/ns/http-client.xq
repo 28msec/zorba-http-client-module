@@ -145,12 +145,6 @@ declare %sequential function http:send-request(
     return http:tidy-result($result, fn:data($request/@override-media-type))
   } catch XPTY0004 {
     fn:error($err:HC005, "The request element is not valid.")
-  } catch HC004 {
-    fn:error($err:HC004, "The src attribute on the body element is mutually exclusive with all other attribute (except the media-type).")
-  } catch HC005 {
-    fn:error($err:HC005, "The request element is not valid.")
-  } catch HC002 {
-    fn:error($err:HC002, "Error parsing the entity content as XML or HTML.")
   }
 };
 
@@ -176,12 +170,6 @@ declare %sequential function http:send-request (
     http:send-request($request, (), ())
   } catch XPTY0004 {
     fn:error($err:HC005, "The request element is not valid.")
-  } catch HC004 {
-    fn:error($err:HC004, "The src attribute on the body element is mutually exclusive with all other attribute (except the media-type).")
-  } catch HC005 {
-    fn:error($err:HC005, "The request element is not valid.")
-  } catch HC002 {
-    fn:error($err:HC002, "Error parsing the entity content as XML or HTML.")
   }
 };
 
@@ -210,12 +198,6 @@ declare %sequential function http:send-request(
     http:send-request($request, $href, ())
   } catch XPTY0004 {
     fn:error($err:HC005, "The request element is not valid.")
-  } catch HC004 {
-    fn:error($err:HC004, "The src attribute on the body element is mutually exclusive with all other attribute (except the media-type).")
-  } catch HC005 {
-    fn:error($err:HC005, "The request element is not valid.")
-  } catch HC002 {
-    fn:error($err:HC002, "Error parsing the entity content as XML or HTML.")
   }
 };
 
