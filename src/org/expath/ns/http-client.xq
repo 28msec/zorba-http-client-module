@@ -142,9 +142,12 @@ declare %ann:sequential function http:send-request(
   $request as element()?,
   $href as xs:string?,
   $bodies as item()*) as item()+ {
-  try {
-    let $result := zorba-http:send-request($request, $href, $bodies)
-    return http:tidy-result($result, fn:data($request/@override-media-type))
+  try 
+  {
+     {
+       local variable $result := zorba-http:send-request($request, $href, $bodies);
+       http:tidy-result($result, fn:data($request/@override-media-type))
+     }
   } catch XPTY0004 {
     fn:error($err:HC005, "The request element is not valid.")
   }
