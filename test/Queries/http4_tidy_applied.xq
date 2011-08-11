@@ -1,7 +1,7 @@
 import module namespace httpc = "http://expath.org/ns/http-client";
 declare namespace http = "http://expath.org/ns/http-client";
 
-local variable $http-res1 :=
+variable $http-res1 :=
 httpc:send-request(
   <http:request href="http://www.zorba-xquery.com/http-client/example_com.html" method="GET" 
                auth-method="Basic"
@@ -9,7 +9,7 @@ httpc:send-request(
                username="zorba"
                password="blub"/>);
 
-local variable $http-res2 :=
+variable $http-res2 :=
 httpc:send-request(
   <http:request href="http://www.zorba-xquery.com/http-client/example_com.html" method="GET"
                override-media-type="text/plain"

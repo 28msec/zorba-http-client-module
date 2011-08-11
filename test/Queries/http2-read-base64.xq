@@ -1,14 +1,14 @@
 import module namespace http = "http://expath.org/ns/http-client";
 declare namespace h = "http://expath.org/ns/http-client";
 
-local variable $req := <h:request method="GET"
+variable $req := <h:request method="GET"
                href="http://www.zorba-xquery.com/http-client/download.png"
                auth-method="Basic"
                send-authorization="true"
                username="zorba"
                password="blub"/>;
 
-local variable $http-res := http:send-request($req, ());
+variable $http-res := http:send-request($req, ());
 
 let $res := $http-res[1]
 return (exists($res//h:header[@name = 'Content-Type' and @value = 'image/png']),

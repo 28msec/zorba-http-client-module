@@ -147,7 +147,7 @@ declare %ann:sequential function http:send-request(
   try 
   {
      {
-       local variable $result := zorba-http:send-request($request, $href, $bodies);
+       variable $result := zorba-http:send-request($request, $href, $bodies);
        http:tidy-result($result, fn:data($request/@override-media-type))
      }
   } catch XPTY0004 {

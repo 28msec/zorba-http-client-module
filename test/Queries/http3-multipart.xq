@@ -2,7 +2,7 @@ import module namespace httpc = "http://expath.org/ns/http-client";
 
 declare namespace http = "http://expath.org/ns/http-client";
 
-local variable $req :=
+variable $req :=
   <http:request method="POST" href="http://www.zorba-xquery.com/rest-tests/request.php">
     <http:header name="foo" value="bar"/>
     <http:multipart media-type="multipart/mixed">
@@ -17,9 +17,9 @@ local variable $req :=
     </http:multipart>
   </http:request>;
 
-local variable $http-res := httpc:send-request($req);
+variable $http-res := httpc:send-request($req);
 
-local variable $res := $http-res[2];
+variable $res := $http-res[2];
 
 <result>
       <number-of-bodies>{fn:count($res//http:body)}</number-of-bodies>

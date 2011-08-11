@@ -1,7 +1,7 @@
 import module namespace http = "http://expath.org/ns/http-client";
 declare namespace h = "http://expath.org/ns/http-client";
 
-local variable $req := <h:request method="GET"
+variable $req := <h:request method="GET"
                href="http://www.zorba-xquery.com/http-client/no-type.blub"
                auth-method="Basic"
                send-authorization="true"
@@ -10,6 +10,6 @@ local variable $req := <h:request method="GET"
                override-media-type="text/html"
                status-only="true"/>;
 
-local variable $res := http:send-request($req, ());
+variable $res := http:send-request($req, ());
 
 fn:not(exists($res[1]//*:body))
