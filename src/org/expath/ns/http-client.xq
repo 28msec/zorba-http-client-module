@@ -96,6 +96,7 @@ xquery version "3.0";
  : @author Markus Pilman
  : @see <a href="http://www.w3.org/TR/xquery-11/#FunctionDeclns">XQuery 1.1: Function Declaration</a>
  : @library <a href="http://curl.haxx.se/">cURL Library</a>
+ : @project expath.org
  :
  :)
 module namespace http = "http://expath.org/ns/http-client";
