@@ -19,7 +19,7 @@ xquery version "3.0";
 (:~
  : <p>
  : This module provides an implementation of the
- : <a href="http://expath.org/modules/http-client.html">EXPath Http Client</a>.
+ : <a href="http://expath.org/modules/http-client/">EXPath Http Client</a>.
  : It provides functions for making HTTP requests and is a superset of the
  : module specified by EXPath.
  : Specifically, it implements the <code>http:send-request()</code> functions
