@@ -88,9 +88,9 @@ xquery version "3.0";
  : <p>
  : The structure of a request element is defined in the schema that is imported
  : by this module. The details are described in the
- : <a href="http://expath.org/modules/http-client.html#d2e183">specification</a>.
+ : <a href="http://expath.org/spec/http-client#d2e183">specification</a>.
  : Analogously, the response element is also described in this
- : <a href="http://expath.org/modules/http-client.html#d2e483">specification</a>.
+ : <a href="http://expath.org/spec/http-client#d2e491">specification</a>.
  : </p>
  :
  : @author Markus Pilman
