@@ -126,7 +126,7 @@ declare option ver:module-version "1.0";
  :
  : @param $request Contains the various parameters of the request. 
  :   See the 
- :   <a href="http://expath.org/modules/http-client.html#d2e183">specification</a>.
+ :   <a href="http://expath.org/spec/http-client#d2e183">specification</a>.
  :   for a full description of the structure of this element.
  : @param $href is the HTTP or HTTPS URI to send the request to. It must be a valid
  :  xs:anyURI, but is declared as a string to be able to pass literal strings
@@ -137,7 +137,7 @@ declare option ver:module-version "1.0";
  :  and OPTIONS.
  : @return a sequence of items, where the first item is a element of type
  :  http:responseType. The response element is also described in the
- :  <a href="http://expath.org/modules/http-client.html#d2e483">specification</a>.
+ :  <a href="http://expath.org/spec/http-client#d2e483">specification</a>.
  :  If there is one (or several, in case of multipart) response body, the response bodies
  :  are the next items in the sequence.
  :)   
