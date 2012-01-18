@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DECLARE_ZORBA_MODULE (URI "http://expath.org/ns/http-client" FILE "http-client.xq")
+DECLARE_ZORBA_MODULE (URI "http://expath.org/ns/http-client" FILE "http-client.xq" VERSION 1.0)
