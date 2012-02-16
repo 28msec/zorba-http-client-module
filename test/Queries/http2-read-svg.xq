@@ -7,7 +7,8 @@ variable $req := <h:request method="GET"
                auth-method="Basic"
                send-authorization="true"
                username="zorba"
-               password="blub"/>;
+               password="blub"
+               override-media-type="application/xml; charset=utf-8"/>;
 
 variable $http-res := http:send-request($req, ());
 
