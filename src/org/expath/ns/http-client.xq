@@ -109,7 +109,7 @@ import schema namespace tidy-options="http://www.zorba-xquery.com/modules/conver
 
 import schema namespace https = "http://expath.org/ns/http-client";
 
-declare namespace ann = "http://www.zorba-xquery.com/annotations";
+declare namespace an = "http://www.zorba-xquery.com/annotations";
 
 declare namespace ver = "http://www.zorba-xquery.com/options/versioning";
 declare option ver:module-version "1.0";
@@ -141,7 +141,7 @@ declare option ver:module-version "1.0";
  :  If there is one (or several, in case of multipart) response body, the response bodies
  :  are the next items in the sequence.
  :)   
-declare %ann:sequential function http:send-request(
+declare %an:sequential function http:send-request(
   $request as element()?,
   $href as xs:string?,
   $bodies as item()*) as item()+ {
@@ -172,7 +172,7 @@ declare %ann:sequential function http:send-request(
  : @return see return value of the sequential 
  :  <a href="#send-request-3">send-request</a> function with three parameters.
  :)
-declare %ann:sequential function http:send-request (
+declare %an:sequential function http:send-request (
   $request as element()) as item()+ {
   try {
     http:send-request($request, (), ())
@@ -199,7 +199,7 @@ declare %ann:sequential function http:send-request (
  : @return see return of
  :  <a href="#send-request-3">send-request</a>
  :)
-declare %ann:sequential function http:send-request(
+declare %an:sequential function http:send-request(
   $request as element()?,
   $href as xs:string?) as item()+ {
   try {
