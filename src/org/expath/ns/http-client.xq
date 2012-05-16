@@ -94,7 +94,7 @@ xquery version "3.0";
  : </p>
  :
  : @author Markus Pilman
- : @see <a href="http://www.w3.org/TR/xquery-11/#FunctionDeclns">XQuery 1.1: Function Declaration</a>
+ : @see <a href="http://www.w3.org/TR/xquery-3/#FunctionDeclns">XQuery 3.0: Function Declaration</a>
  : @library <a href="http://curl.haxx.se/">cURL Library</a>
  : @project expath.org
  :
