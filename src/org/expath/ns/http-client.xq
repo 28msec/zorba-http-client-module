@@ -30,18 +30,22 @@ xquery version "3.0";
  : <p>
  : In general, both functions take a description of the HTTP request to make
  : as parameter, execute the request, and return a representation of the HTTP
- : response.
+ : response. For instance, in the following code snippet, we fetch the blog feed from Zorba:
  : </p>
+ : <pre class="ace-static" ace-mode="xquery"><![CDATA[import module namespace http = "http://expath.org/ns/http-client";
+ : 
+ : http:send-request(
+ :  <http:request href="http://www.zorba-xquery.com/blog/feed"  method="get" />
+ : )
+ : ]]></pre>
+ : <p>You can try this example <a href="http://www.zorba-xquery.com/html/demo#GKnscDSYqVadJ+CQftvnRw+LUd0=">live</a>.</p>
  : 
  : <p>
  : The <code>http:send-request()</code> functions are declared as sequential. 
  : Sequential functions are allowed to have side effects. For example, most probably,
  : an HTTP POST request is a request that has side effects because it adds/changes
  : a remote resource. Sequential functions are specified in the
- : <a href="http://www.w3.org/TR/xquery-sx-10/">XQuery Scripting Extension</a>,
- : which is an extension of XQuery.
- : Sequential functions are only allowed to be invoked in certain places (e.g.
- : only from functions which are declared as sequential themselves).
+ : <a href="http://www.zorba-xquery.com/html/documentation/2.6.0/zorba/scripting_tutorial">XQuery Scripting Extension</a>.
  : In contrast, the http:read() functions are not declared as sequential -
  : they are declared as nondeterministic though, which
  : means that several calls may return different results.
@@ -96,7 +100,7 @@ xquery version "3.0";
  : @author Markus Pilman
  : @see <a href="http://www.w3.org/TR/xquery-3/#FunctionDeclns">XQuery 3.0: Function Declaration</a>
  : @library <a href="http://curl.haxx.se/">cURL Library</a>
- : @project expath.org
+ : @project EXPath/HTTP Client
  :
  :)
 module namespace http = "http://expath.org/ns/http-client";
