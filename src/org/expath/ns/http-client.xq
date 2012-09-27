@@ -45,7 +45,7 @@ xquery version "3.0";
  : Sequential functions are allowed to have side effects. For example, most probably,
  : an HTTP POST request is a request that has side effects because it adds/changes
  : a remote resource. Sequential functions are specified in the
- : <a href="http://www.zorba-xquery.com/html/documentation/2.6.0/zorba/scripting_tutorial">XQuery Scripting Extension</a>.
+ : <a href="http://www.zorba-xquery.com/html/documentation/latest/zorba/scripting_tutorial">XQuery Scripting Extension</a>.
  : In contrast, the http:read() functions are not declared as sequential -
  : they are declared as nondeterministic though, which
  : means that several calls may return different results.
