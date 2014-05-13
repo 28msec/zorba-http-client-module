@@ -47,7 +47,7 @@ xquery version "3.0";
  : a remote resource. Sequential functions are specified in the
  : <a href="http://zorba.io/documentation/2.9/zorba/scripting_tutorial.html">XQuery Scripting Extension</a>.
  : In contrast, the http:read() functions are not declared as sequential -
- : they are declared as nondeterministic though, which
+ : they are declared as being non deterministic though, which
  : means that several calls may return different results.
  : HTTP requests performed using these functions are <b>not</b> allowed to have
  : side effects.
