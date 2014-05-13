@@ -12,8 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# all external module libraries are generated in the directory
-# of the corresponding .xq file
-MESSAGE(STATUS "Add org")
-ADD_SUBDIRECTORY(org)
-MESSAGE(STATUS "End modules")
+DECLARE_ZORBA_MODULE (URI "http://expath.org/ns/http-client" FILE "http-client.xq" VERSION 1.0)

@@ -30,22 +30,22 @@ xquery version "3.0";
  : <p>
  : In general, both functions take a description of the HTTP request to make
  : as parameter, execute the request, and return a representation of the HTTP
- : response. For instance, in the following code snippet, we fetch the blog feed from Zorba:
+ : response. For instance, in the following code snippet, we fetch the Zorba
+ : home page:
  : </p>
  : <pre class="ace-static" ace-mode="xquery"><![CDATA[import module namespace http = "http://expath.org/ns/http-client";
  : 
  : http:send-request(
- :  <http:request href="http://www.zorba-xquery.com/blog/feed"  method="get" />
+ :  <http:request href="http://zorba.io" method="get" />
  : )
  : ]]></pre>
- : <p>You can try this example <a href="http://www.zorba-xquery.com/html/demo#GKnscDSYqVadJ+CQftvnRw+LUd0=">live</a>.</p>
  : 
  : <p>
  : The <code>http:send-request()</code> functions are declared as sequential. 
  : Sequential functions are allowed to have side effects. For example, most probably,
  : an HTTP POST request is a request that has side effects because it adds/changes
  : a remote resource. Sequential functions are specified in the
- : <a href="http://www.zorba-xquery.com/html/documentation/latest/zorba/scripting_tutorial">XQuery Scripting Extension</a>.
+ : <a href="http://zorba.io/documentation/2.9/zorba/scripting_tutorial.html">XQuery Scripting Extension</a>.
  : In contrast, the http:read() functions are not declared as sequential -
  : they are declared as nondeterministic though, which
  : means that several calls may return different results.
@@ -97,15 +97,15 @@ xquery version "3.0";
  : <a href="http://expath.org/spec/http-client#d2e491">specification</a>.
  : </p>
  :
- : @author Markus Pilman
+ : @author Federico Cavalieri, Markus Pilman
  : @see <a href="http://www.w3.org/TR/xquery-3/#FunctionDeclns">XQuery 3.0: Function Declaration</a>
  : @library <a href="http://curl.haxx.se/">cURL Library</a>
- : @project EXPath/HTTP Client
+ : @project EXPath/EXPath HTTP Client
  :
  :)
 module namespace http = "http://expath.org/ns/http-client";
 
-import module namespace zorba-http = "http://www.zorba-xquery.com/modules/http-client";
+import module namespace http-wrapper = "http://zorba.io/modules/http-client-wrapper";
 import module namespace err = "http://expath.org/ns/error";
 
 import module namespace tidy="http://www.zorba-xquery.com/modules/converters/html";
@@ -113,9 +113,9 @@ import schema namespace tidy-options="http://www.zorba-xquery.com/modules/conver
 
 import schema namespace https = "http://expath.org/ns/http-client";
 
-declare namespace an = "http://www.zorba-xquery.com/annotations";
+declare namespace an = "http://zorba.io/annotations";
 
-declare namespace ver = "http://www.zorba-xquery.com/options/versioning";
+declare namespace ver = "http://zorba.io/options/versioning";
 declare option ver:module-version "1.0";
 
 (:~
@@ -152,7 +152,7 @@ declare %an:sequential function http:send-request(
   try 
   {
      {
-       variable $result := zorba-http:send-request($request, $href, $bodies);
+       variable $result := http-wrapper:http-sequential-request($request, $href, $bodies);
        http:tidy-result($result, fn:data($request/@override-media-type))
      }
   } catch XPTY0004 {
@@ -223,4 +223,4 @@ declare %private function http:tidy-result($result as item()+, $override-media-t
       tidy:parse($body)
     else
       $body
-};                          
+};
