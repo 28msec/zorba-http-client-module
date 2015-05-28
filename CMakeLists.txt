@@ -12,6 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+MESSAGE(STATUS "")
+MESSAGE(STATUS "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+MESSAGE(STATUS "Configuring external module <http-client>")
+MESSAGE(STATUS "-------------------------------------------------------------")
+MESSAGE(STATUS "")
+
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
 PROJECT (zorba_http-client_module)
@@ -32,10 +38,22 @@ ELSE (NOT SUPPRESS_HTML_MODULE_FIND_PACKAGE)
 ENDIF (NOT SUPPRESS_HTML_MODULE_FIND_PACKAGE)
 
 IF (zorba_html_module_FOUND)
+
   ADD_TEST_DIRECTORY("${PROJECT_SOURCE_DIR}/test")
   ADD_SUBDIRECTORY("src")
+  
+  MESSAGE(STATUS "")
+  MESSAGE(STATUS "-------------------------------------------------------------")
+  MESSAGE(STATUS "Configuration SUCCEEDED for external module <http-client>")
+  
 ELSE (zorba_html_module_FOUND)
   MESSAGE (STATUS "Didn't find Zorba's HTML module - skipping http-client module")
+  
+  MESSAGE(STATUS "")
+  MESSAGE(STATUS "-------------------------------------------------------------")  
+  MESSAGE(STATUS "Configuration FAILED for external module <http-client>")
+  
 ENDIF (zorba_html_module_FOUND)
 
 DONE_DECLARING_ZORBA_URIS()
+MESSAGE(STATUS "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
